@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFHL Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>BFHL Challenge</h1>
+
+    <!-- Input field -->
+    <textarea id="jsonInput" placeholder='Enter JSON (e.g. { "data": ["A","1","B","4"] })'></textarea>
+    <button onclick="processData()">Submit</button>
+    <p id="error"></p>
+
+    <!-- Filter options -->
+    <div id="filters">
+        <label><input type="checkbox" onclick="toggleFilter('alphabets')"> Alphabets</label>
+        <label><input type="checkbox" onclick="toggleFilter('numbers')"> Numbers</label>
+        <label><input type="checkbox" onclick="toggleFilter('highest_alphabet')"> Highest Alphabet</label>
+    </div>
+
+    <!-- Output results -->
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
